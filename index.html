@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind personal website</title>
+    <style>
+      
+    #id{
+        font-weight:bold;
+        color:red;
+
+    }
+    button:hover{
+        color:red;
+        background-color:rgb(245, 245, 0);
+        font-size:20px;
+        font-weight:bold;
+        
+    }
+    button:active{
+        color:rgb(0, 0, 243);
+        background-color: greenyellow;
+    }
+    input:hover{
+        color:green;
+        
+    }
+    #inp{
+        color:rgb(0, 0, 0);
+        font-weight:bold;
+        font-size:20px;
+        text-transform:uppercase;
+    }
+    
+    
+    #inp:hover{
+        color:rgb(114, 99, 99);
+    }
+    <script> 
+        function myFunction(){
+            document.getElementById("demo").innerHTML="paragraph Changed to ";
+        }
+    </script>
+    #im:hover{
+        color: antiquewhite;
+    }
+    #change{
+        border-radius: 20px;
+        color:red;
+    }
+    #bb{
+        color:rgb(255, 255, 255);
+        background-color:rgb(252, 74, 3);
+        border-radius: 20px;
+        font-size:25px;
+      
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif';
+    }
+    #bb:hover{
+        background-color: rgba(128, 255, 0, 0.875);
+        color:rgb(255, 255, 255);
+    }
+    #bb:visited{
+        color:greenyellow;
+    }
+    </style>
+</head>
+<body>
+    <div id="col" padding="30;">
+    <form  method="post" enctype="multipart/form-data">
+        <fieldset align="center" style="background-color: antiquewhite;">
+            <legend style="color:rgb(0, 255, 55);">APPLY FOR JOB</legend>
+        <p id="inp">Name:
+            <input  type="text" name="username"  required>
+        </p>
+        <p id="inp">E-mail:
+            <input  type="email" name="email" required .>
+        </p>
+        <p id="inp">phone Number:
+            <input type="number" name="phone number"  required>
+        </p>
+        <p style=" font-size:20px;
+        text-transform:uppercase;">
+            <b>Select D.O.B</b>
+            <input type="date" name="dob">
+        </p>
+   
+        <p style=" font-size:20px;
+        text-transform:uppercase;"><b>upload your resume:</b>
+            <input type="file" name="resume" required>
+        </p>
+
+       <!--responsing form submited-->
+
+       <span style="color:black;"><p id="change" style="font-size:25px;background-color: chartreuse;color:white;"></p></span> 
+    
+      <button style="  color:rgb(255, 255, 255);
+      background-color:rgb(0, 184, 216);
+      border-radius: 20px;
+      font-size:25px;">All information correct</button><br><br><br><div>
+          <button id="bb" type="button"
+          onclick='document.getElementById("change").innerHTML="Form Submitted"'>submit form</button>
+        </div>
+</fieldset>
+</form>
+   
+
+
+
+    <script>
+        window.alert("Welcome to job application form press ok to continue...");
+    </script><br><br>
+
+ 
+
+
+</body>
+</html>
